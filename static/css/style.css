@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background-color: aquamarine;
+}
+
+h1 {
+  color: red;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}

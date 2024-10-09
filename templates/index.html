@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Página de inicio
+{% endblock %}
+
+{% block content %}
+<h1>Yokozo!</h1>
+{% if name %}
+<p>Hola {{ name }}!</p>
+{% else %}
+<p>Hola, soy un usuario anónimo!</p>
+{% endif %}
+<!-- Pipeline de filtros de la plantilla -->
+<p>Estoy aquí porque {{ friends|length }} amigos me han invitado a esta página.</p>
+<h2>Lista de amigos</h2>
+<ul>
+    {% for friend in friends %}
+    <li>{{ friend }}</li>
+    {% endfor %}
+</ul>
+<p>La fecha actual es {{ date | today }}</p>
+<p>La frase repetida es: {{ repeat('hola ', 3) }}</p>
+{% endblock %}
